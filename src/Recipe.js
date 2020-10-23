@@ -1,9 +1,10 @@
 import React from 'react';
+import style from './recipe.module.css';
 
 const Recipe = ({title, calories, ingredients, image}) => {
     calories = Math.round(calories);
     return (
-        <div>
+        <div className={style.Recipe}>
             <h1>{title}</h1>
             <p>{calories} calories</p>
             <ul>
