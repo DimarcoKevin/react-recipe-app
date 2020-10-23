@@ -47,7 +47,7 @@ const App = () => {
           calories={recipe.recipe.calories} 
           image={recipe.recipe.image}
         />
-      ))};
+      ))}
     </div>
   );
 };
