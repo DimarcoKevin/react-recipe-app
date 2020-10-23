@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Recipe = () => {
+const Recipe = ({title, calories, image}) => {
+    calories = Math.round(calories);
     return (
         <div>
-            <h1>Title</h1>
-            <p>Calories</p>
-            <img src="" alt=""></img>
+            <h1>{title}</h1>
+            <p>{calories} calories</p>
+            <img src={image} alt={title + " image"}></img>
         </div>
     );
 }
