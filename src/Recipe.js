@@ -4,7 +4,7 @@ import style from './recipe.module.css';
 const Recipe = ({title, calories, ingredients, image}) => {
     calories = Math.round(calories);
     return (
-        <div className={style.Recipe}>
+        <div className={style.recipe}>
             <h1>{title}</h1>
             <p>{calories} calories</p>
             <ul>
@@ -12,7 +12,7 @@ const Recipe = ({title, calories, ingredients, image}) => {
                     <li>{ingredient.text}</li>
                 ))}
             </ul>
-            <img src={image} alt={title + " image"}></img>
+            <img className={style.image} src={image} alt={title + " image"}></img>
         </div>
     );
 }
