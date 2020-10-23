@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Recipe from './Recipe';
 import './App.css';
 
 const App = () => {
@@ -26,6 +27,9 @@ const App = () => {
           Search
         </button>
       </form>
+      {recipes.map(recipe => (
+        <Recipe></Recipe>
+      ))};
     </div>
   );
 };
