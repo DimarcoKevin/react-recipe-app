@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 const App = () => {
@@ -7,6 +7,10 @@ const App = () => {
   const APP_KEY = 'b56e3ba36e59352bf8f05e481a550c1a';
 
   const example = `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
+
+  useEffect(() => {
+    console.log('Effect has been run');
+  });
 
   return (
     <div className="App">
