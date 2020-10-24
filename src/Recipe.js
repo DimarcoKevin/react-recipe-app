@@ -1,6 +1,10 @@
 import React from 'react';
 import style from './recipe.module.css';
 
+/**
+ * This is what will create each of the recipe objects that is returned by the API
+ * It will format them by Title, Calories, an array of Ingredients, and finally the dishes image
+ */
 const Recipe = ({title, calories, ingredients, image}) => {
     calories = Math.round(calories);
     return (
